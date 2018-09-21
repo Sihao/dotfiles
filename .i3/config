@@ -33,7 +33,7 @@ bindsym $mod+Return exec terminal
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec --no-startup-id rofi -run-list-command ". ~/.config/rofi/add-aliases.sh" -run-command "/bin/bash -i -c '{cmd}'" -show run
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
 
